@@ -44,7 +44,7 @@ typedef struct instruction_s
  * @read_buff: Buffer for read.
  * @list_cmd: Tokenized read buffer.
  * @tok_cmd: Tokenize each token from previous split based on spaces.
- * @argv: Arguments from command line.
+ * @argu: Arguments from command line.
  *
  * Description: - Buffers used globally throughout files.
  */
@@ -53,7 +53,7 @@ typedef struct buf_struct
 	char read_buff[4096];
 	char *list_cmd[1000];
 	char *tok_cmd[1000];
-	char **argv;
+	char **argu;
 } buf_struct;
 
 
